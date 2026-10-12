@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-txt: 'Roboto', sans-serif;
+  --font-title: 'Josefin Sans', sans-serif;
+  --font-logo: 'Caacupe One', sans-serif;
+}
+
+/* .dark {
+  color: rgb(26, 12, 1);
+} */
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
