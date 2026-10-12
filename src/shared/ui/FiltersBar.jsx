@@ -119,7 +119,7 @@ export default function FiltersBar() {
             {decades.map((d) => (
               <button
                 key={d}
-                className={`line-clamp-1 rounded-sm px-1 py-0.5 text-xs text-ellipsis text-stone-950 ${selectedDecade === d ? 'bg-pink-600' : 'bg-orange-400'}`}
+                className={`line-clamp-1 cursor-pointer rounded-sm px-1 py-0.5 text-xs text-ellipsis text-stone-950 ${selectedDecade === d ? 'bg-pink-600' : 'bg-orange-400'}`}
                 onClick={() =>
                   setSelectedDecade(() => {
                     if (d === selectedDecade) return null;
@@ -151,7 +151,7 @@ export default function FiltersBar() {
             {stars.map((s) => (
               <button
                 key={s}
-                className={`line-clamp-1 rounded-sm ${selectedStars === s.split('+')[0] ? 'bg-pink-600' : 'bg-orange-400'} px-1 py-0.5 text-xs text-ellipsis text-stone-950`}
+                className={`line-clamp-1 cursor-pointer rounded-sm ${selectedStars === s.split('+')[0] ? 'bg-pink-600' : 'bg-orange-400'} px-1 py-0.5 text-xs text-ellipsis text-stone-950`}
                 onClick={() =>
                   setSelectedStars(() => {
                     if (s.split('+')[0] === selectedStars) return null;
